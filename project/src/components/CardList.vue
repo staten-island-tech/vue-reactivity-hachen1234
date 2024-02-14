@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-const card = [
+export const card = [
   {
     name: "Victorian Clasped Hands Seal",
     cost: "$960.00 ",
@@ -48,14 +48,20 @@ const card = [
   },
   {
     name: "Antique Victorian Wax Seal Stamp for Letter Sealing Wax with Carnelian Handle and Brass Flower Impress",
-    cost: "$165.00 ",
+    cost: "$165.00",
     img: "./img/img8.webp",
     used: false,
   },
   {
     name: "Antique Seal, French, Napoleon III, Palais Royale MOP Hand Disc Fede",
-    cost: "$855.94  ",
-    img: "./img/img0.webp",
+    cost: "$855.94",
+    img: "./img/img9.avif",
+    used: true,
+  },
+  {
+    name: "Silver 925 Wax Seal Stamp (15.38g.)",
+    cost: "$130.00",
+    img: "./img/img10.webp",
     used: true,
   },
 ];
