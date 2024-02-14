@@ -2,7 +2,7 @@
   <div></div>
 </template>
 
-<script setup>
+<script>
 export const card = [
   {
     name: "Victorian Clasped Hands Seal",
