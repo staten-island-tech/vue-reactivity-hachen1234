@@ -1,9 +1,6 @@
 <template>
   <div>
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-    <div class="container">
+    <div class="items">
       <CardList v-for="card in cards" :key="cards.name" :card="card" />
     </div>
   </div>
@@ -73,20 +70,6 @@ const cards = [
     used: true,
   },
 ];
-=======
->>>>>>> Stashed changes
-    <h1>{{ card.name }}</h1>
-  </div>
-</template>
-
-<script>
-const props = defineProps({
-  card: object,
-});
-import { objectToString } from "@vue/shared";
-import card from "../components/CardList.vue";
-console.log(card);
->>>>>>> 755c5145bf1567974be19a86a55d5aa7bf5c1e88
 </script>
 
 <style scoped></style>
