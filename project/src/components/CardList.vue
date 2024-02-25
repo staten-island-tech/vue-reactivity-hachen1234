@@ -1,7 +1,19 @@
 <template>
-  <div></div>
+  <div>
+    <div class="cardlist">
+      <h2>{{ card.name }}</h2>
+      <img :src="card.img" alt="" />
+      <h3>{{ card.price }}</h3>
+    </div>
+  </div>
 </template>
 
+<<<<<<< HEAD
+<script setup>
+const props = defineProps({
+  card: Object,
+});
+=======
 <script>
 export default {
   card: [
@@ -67,6 +79,10 @@ export default {
     },
   ],
 };
+<<<<<<< Updated upstream
+=======
+>>>>>>> 755c5145bf1567974be19a86a55d5aa7bf5c1e88
+>>>>>>> Stashed changes
 </script>
 
 <style scoped></style>
