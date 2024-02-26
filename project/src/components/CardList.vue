@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="cardlist">
+    <div class="Cardlist">
       <h2>{{ card.name }}</h2>
       <img :src="card.img" alt="" />
       <h3>{{ card.price }}</h3>
