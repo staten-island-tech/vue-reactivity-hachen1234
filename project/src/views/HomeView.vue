@@ -1,7 +1,12 @@
 <template>
   <div>
     <div class="items">
-      <CardList v-for="card in cards" :key="cards.name" :card="card" />
+      <CardList
+        class="card"
+        v-for="card in cards"
+        :key="cards.name"
+        :card="card"
+      />
     </div>
   </div>
 </template>
@@ -69,7 +74,41 @@ const cards = [
     img: "./img/img10.webp",
     used: true,
   },
+  {
+    name: "Chinese Emperor Seal",
+    cost: "$79.99",
+    img: "./img/img11.avif",
+    used: false,
+  },
+  {
+    name: "Handy the Seal",
+    cost: "$???",
+    img: "./img/handy.jpg",
+    used: false,
+  },
 ];
 </script>
 
-<style scoped></style>
+<style>
+body * {
+  box-sizing: border-box;
+  font-size: 110%;
+  margin: 0;
+  padding: 0;
+}
+.card {
+  width: 30rem;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  background-color: #59a6a6;
+  object-fit: cover;
+  border-radius: 2rem;
+  justify-content: space-around;
+  margin-top: 6rem;
+  text-align: center;
+}
+img {
+  width: 60%;
+  object-fit: cover;
+}
+</style>

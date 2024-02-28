@@ -3,7 +3,7 @@
     <div class="Cardlist">
       <h2>{{ card.name }}</h2>
       <img :src="card.img" alt="" />
-      <h3>{{ card.price }}</h3>
+      <h3>{{ card.cost }}</h3>
     </div>
   </div>
 </template>
