@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>pls buy</h1>
     <div class="items">
       <CardList
         class="card"
@@ -81,6 +82,12 @@ const cards = [
     used: false,
   },
   {
+    name: "Ancient Antique Bronze Royal African Ruler Wax Seal Stamp ",
+    cost: "$2,999.95",
+    img: "./img/img12.webp",
+    used: true,
+  },
+  {
     name: "Handy the Seal",
     cost: "$???",
     img: "./img/handy.jpg",
@@ -96,6 +103,15 @@ body * {
   margin: 0;
   padding: 0;
 }
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #7e9a9a;
+  border: black solid;
+  float: left;
+  width: 75%;
+}
 .card {
   width: 30rem;
   margin: 1rem auto;
@@ -110,5 +126,6 @@ body * {
 img {
   width: 60%;
   object-fit: cover;
+  height: 20rem;
 }
 </style>
