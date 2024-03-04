@@ -7,7 +7,7 @@
       rel="stylesheet"
     />
 
-    <h1>pls buy</h1>
+    <h1>Pay Up</h1>
     <div class="items">
       <CardList
         class="card"
