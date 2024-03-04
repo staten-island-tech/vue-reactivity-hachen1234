@@ -4,7 +4,7 @@
       <h2>{{ card.name }}</h2>
       <img :src="card.img" alt="" />
       <h3>{{ card.cost }}</h3>
-      <button>add to cart</button>
+      <button v-on:click="$emit('add')">add to cart</button>
     </div>
   </div>
 </template>

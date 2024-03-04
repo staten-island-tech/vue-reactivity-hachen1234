@@ -7,6 +7,22 @@
         v-for="card in cards"
         :key="cards.name"
         :card="card"
+        @add="
+          console.log('damn');
+          {
+            array = card;
+            store.push(card);
+          }
+          console.log(store);
+        "
+      />
+    </div>
+    <div class="cartlist">
+      <shoppingcardlist
+        class="card"
+        v-for="card in store"
+        :key="card.name"
+        :card="card"
       />
     </div>
   </div>
@@ -14,6 +30,11 @@
 
 <script setup>
 import CardList from "@/components/CardList.vue";
+import shoppingcardlist from "@/components/ItemCart.vue";
+import add from "@/components/CardList.vue";
+import remove from "@/components/ItemCart.vue";
+import { ref } from "vue";
+
 const cards = [
   {
     name: "Victorian Clasped Hands Seal",
@@ -94,6 +115,8 @@ const cards = [
     used: false,
   },
 ];
+
+const store = ref([]);
 </script>
 
 <style>
@@ -111,6 +134,15 @@ body * {
   border: black solid;
   float: left;
   width: 75%;
+}
+.cartlist {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #7e9a9a;
+  border: black solid;
+  float: right;
+  width: 25%;
 }
 .card {
   width: 30rem;
