@@ -31,7 +31,7 @@
         :key="card.name"
         :card="card"
         @remove="
-          console.log('pushed');
+          console.log('damn');
           {
             array = (index, 1);
             store.splice(index, 1);
