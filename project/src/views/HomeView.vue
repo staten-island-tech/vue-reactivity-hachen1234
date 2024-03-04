@@ -1,5 +1,12 @@
 <template>
   <div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+
     <h1>pls buy</h1>
     <div class="items">
       <CardList
@@ -23,6 +30,14 @@
         v-for="card in store"
         :key="card.name"
         :card="card"
+        @remove="
+          console.log('damn');
+          {
+            array = card;
+            store.pop();
+          }
+          console.log(store);
+        "
       />
     </div>
   </div>
@@ -126,11 +141,21 @@ body * {
   margin: 0;
   padding: 0;
 }
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  background-color: #a8dadc;
+  text-align: center;
+  font-size: 3rem;
+}
 .items {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: #7e9a9a;
+  background-color: #fec89a;
   border: black solid;
   float: left;
   width: 75%;
@@ -139,7 +164,7 @@ body * {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: #7e9a9a;
+  background-color: #fec89a;
   border: black solid;
   float: right;
   width: 25%;
@@ -148,7 +173,7 @@ body * {
   width: 30rem;
   margin: 1rem auto;
   border-radius: 2rem;
-  background-color: #59a6a6;
+  background-color: #ffb5a7;
   object-fit: cover;
   border-radius: 2rem;
   justify-content: space-around;
