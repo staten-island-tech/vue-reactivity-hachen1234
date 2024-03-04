@@ -31,10 +31,10 @@
         :key="card.name"
         :card="card"
         @remove="
-          console.log('damn');
+          console.log('pushed');
           {
-            array = card;
-            store.pop();
+            array = (index, 1);
+            store.splice(index, 1);
           }
           console.log(store);
         "
